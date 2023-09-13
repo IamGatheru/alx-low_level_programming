@@ -1,12 +1,11 @@
 #include "main.h"
 /**
  * add - add two integers
- * @int: tell me
+ * @a: param
+ * @b: param
  * Return: Always 0 (success)
  */
-int add(int, int)
+int add(int a, int b)
 {
-	int a, b;
-
 	return (a + b);
 }
