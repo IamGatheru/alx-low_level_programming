@@ -26,12 +26,12 @@ int main(void)
 		while (n % i == 0)
 		{
 			max = i;
-			n = n/i;
+			n = n / i;
 		}
 	}
 	if (n > 2)
 		max = n;
-	printf("%ld\n",max);
+	printf("%ld\n", max);
 
 	return (0);
 }
