@@ -10,7 +10,7 @@
 void print_array(int *a, int n)
 {
 	int i;
-	
+
 	if (n >= 1)
 	{
 		for (i = 0; i < n - 1; i++)
@@ -18,10 +18,6 @@ void print_array(int *a, int n)
 			printf("%d, ", a[i]);
 		}
 		if (i == n - 1)
-			printf("%d\n", a[n -1]);
-	}
-	else if (n <= 0)
-	{
-		printf("Enter a valid Number\n");
+			printf("%d\n", a[n - 1]);
 	}
 }
