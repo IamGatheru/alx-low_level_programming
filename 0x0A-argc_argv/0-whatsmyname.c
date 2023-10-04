@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * main - prints function's name followed by a new line
  * @argc: argument count
@@ -6,17 +7,8 @@
  * Return: 0 Always
  */
 
-int main(int argc, char *argv[])
+int main(int __attribute__((unused)) argc, char *argv[])
 {
-	int i, j;
-
-	for (i = 0; i < argc; i++)
-	{
-		for (j = 0; argv[i][j] != '\0'; j++)
-			_putchar (argv[i][j]);
-		_putchar (' ');
-	}
-	_putchar ('\n');
-
+	printf("%s\n", argv[0]);
 	return (0);
 }
