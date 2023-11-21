@@ -1,5 +1,5 @@
 #include "lists.h"
-
+#include <stdio.h>
 /**
  * print_listint - prints all elements of a listint_t list
  * @h: pointer to the list
@@ -10,11 +10,14 @@
 
 size_t print_listint(const listint_t *h)
 {
-  struct node *ptr;
-  ptr =  h;
-  while (ptr != NULL)
-    {
-      printf("%d", ptr-> n);
-      ptr = ptr->next;
-    }
-  return start;
+	size_t count;
+
+	count = 0;
+	while (h != NULL)
+	{
+		printf("%d", h->n);
+		h = h->next;
+		count++;
+	}
+	return (count);
+}
